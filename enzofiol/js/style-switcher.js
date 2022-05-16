@@ -1,6 +1,5 @@
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-const Is = localStorage,
-  d = document;
+const Is = localStorage;
 
 styleSwitcherToggle.addEventListener("click", () => {
   document.querySelector(".style-switcher").classList.toggle("open");
@@ -48,3 +47,15 @@ window.addEventListener("load", () => {
     dayNight.querySelector("i").classList = "fas fa-sun";
   }
 });
+
+console.log(document.querySelectorAll(".alternate-style"));
+
+const colorSelector = document.querySelectorAll(".alternate-style");
+
+function colorMatch() {
+  colorSelector.forEach(() => {
+    if (colorSelector.values("disabled")) {
+      console.log("Disabled");
+    }
+  });
+}
