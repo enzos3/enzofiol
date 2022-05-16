@@ -51,11 +51,3 @@ window.addEventListener("load", () => {
 console.log(document.querySelectorAll(".alternate-style"));
 
 const colorSelector = document.querySelectorAll(".alternate-style");
-
-function colorMatch() {
-  colorSelector.forEach(() => {
-    if (colorSelector.values("disabled")) {
-      console.log("Disabled");
-    }
-  });
-}
