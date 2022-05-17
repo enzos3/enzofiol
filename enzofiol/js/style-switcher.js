@@ -47,15 +47,3 @@ window.addEventListener("load", () => {
     dayNight.querySelector("i").classList = "fas fa-sun";
   }
 });
-
-console.log(document.querySelectorAll(".alternate-style").outerHTML);
-
-const colorSelector = document.querySelectorAll(".alternate-style");
-
-function colorFunction() {
-  document.querySelectorAll(".alternate-style").outerHTML === "disabled"
-    ? console.log("Contiene")
-    : console.log("No ciente");
-}
-
-colorFunction();
