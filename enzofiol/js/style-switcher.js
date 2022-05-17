@@ -48,6 +48,14 @@ window.addEventListener("load", () => {
   }
 });
 
-console.log(document.querySelectorAll(".alternate-style"));
+console.log(document.querySelectorAll(".alternate-style").outerHTML);
 
 const colorSelector = document.querySelectorAll(".alternate-style");
+
+function colorFunction() {
+  document.querySelectorAll(".alternate-style").outerHTML === "disabled"
+    ? console.log("Contiene")
+    : console.log("No ciente");
+}
+
+colorFunction();
